@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Accessible Design Co</title>
 </head>
 
 <body>
     <header>
+
         <div class="brand">
-            <h4>Accessible Design Co.</h4>
-            <p>WEB ACCESSIBILITY SPECIALISTS</p>
+            <p class="company-name">Accessible Design Co.</p>
+            <p>Web Accessibility Specialists</p>
         </div>
 
         <div class="nav-group">
@@ -24,93 +29,97 @@
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
-
-            <button type="button">Get Started</button>
         </div>
+
     </header>
 
     <main>
         <div class="hero-image">
             <div class="hero-text">
-                <h3>Design for Everyone, Without Exception</h1>
+                <h1>Design for Everyone</h1>
             </div>
-            <p class="hero-subtitle">Beautiful, inclusive digital experiences for all users</p>
+            <!-- <p class="hero-subtitle">Beautiful, inclusive digital experiences for all users</p> -->
         </div>
+
+        <button type="button">Click Here for Information On How To Get Started With Us!</button>
 
         <p class="intro-text">
             We help businesses build beautiful, inclusive digital experiences that work for every user — regardless of
             ability, device, or context.
         </p>
 
-        <p class="explore-text">
-            Explore Our Services
-        </p>
-
         <section id="services" class="services">
-            <div class="service-card">
-                <span>🔎</span>
-                <h3>Accessibility Audits</h3>
-                <p>Accessibility Audits
-                    We thoroughly review your existing website against WCAG 2.2 & ARIA standards and deliver a
-                    prioritized action plan.</p>
+            <h2 class="explore-text">Explore Our Services</h2>
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <span>🔎</span>
+                    <h3>Accessibility Audits</h3>
+                    <p>We thoroughly review your existing website against WCAG 2.2 & ARIA standards and deliver
+                        aprioritized action plan.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <span>🎨</span>
+                    <h3>Inclusive UI Design</h3>
+                    <p>From color contrast to keyboard navigation, we design interfaces that are stunning and accessible
+                        from day one.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <span>🖥️</span>
+                    <h3>Screen Reader Optimization</h3>
+                    <p>We implement proper ARIA roles, semantic HTML, and focus management so screen readers work
+                        flawlessly.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <span>📱</span>
+                    <h3>Responsive Accessibility</h3>
+                    <p>Your site should work for everyone on every device. We test across browsers, screen sizes, and
+                        assistive tech.</p>
+                </div>
             </div>
 
-            <div class="service-card">
-                <span>🎨</span>
-                <h3>Inclusive UI Design</h3>
-                <p>From color contrast to keyboard navigation, we design interfaces that are stunning and accessible
-                    from day one.</p>
-            </div>
-
-            <div class="service-card">
-                <span>🖥️</span>
-                <h3>Screen Reader Optimization</h3>
-                <p>We implement proper ARIA roles, semantic HTML, and focus management so screen readers work
-                    flawlessly.</p>
-            </div>
-
-            <div class="service-card">
-                <span>📱</span>
-                <h3>Responsive Accessibility</h3>
-                <p>Your site should work for everyone on every device. We test across browsers, screen sizes, and
-                    assistive tech.</p>
-            </div>
         </section>
 
-        <section id="testimonials" class="testimonials">
+        <section id="testimonials" class="testimonialHeader">
             <h2>What Our Clients Say</h2>
 
             <div class="testimonial-grid">
 
-                <div class="item" id="sarah">
-                    "Accessible Design Co. transformed how we think about our product. Our accessibility score went from
-                    62 to 97 in six weeks — and our users noticed immediately."
-                    — Sarah Chen, Head of Product at Luminary Health
-                </div>
+                <article class="item" id="sarah">
+                    <span>"Accessible Design Co. transformed how we think about our product. Our accessibility score went from
+                    62 to 97 in six weeks — and our users noticed immediately."</span>
+                    <p>— Sarah Chen, Head of Product at Luminary Health</p>
+                </article>
 
-                <div class="item" id="avery">
-                    "Accessible Design Co. transformed how we think about our product. Our accessibility score went from
-                    62 to 97 in six weeks — and our users noticed immediately."
-                    — Avery Adderley Head of Product at Luminary Health
-                </div>
+                <article class="item" id="avery">
+                    <span>"Accessible Design Co. transformed how we think about our product. Our accessibility score went from
+                    62 to 97 in six weeks — and our users noticed immediately."</span>
+                    <p>— Avery Adderley, Head of Product at Luminary Health</p>
+                </article>
 
-                <div class="item" id="landon">
-                    "Accessible Design Co. transformed how we think about our product. Our accessibility score went from
-                    62 to 97 in six weeks — and our users noticed immediately."
-                    — Landon Urie, Head of Product at Luminary Health
-                </div>
+                <article class="item" id="landon">
+                    <span>"Accessible Design Co. transformed how we think about our product. Our accessibility score went from
+                    62 to 97 in six weeks — and our users noticed immediately."</span>
+                    <p>— Landon Urie, Head of Product at Luminary Health</p>
+                </article>
 
-                <div class="item" id="chloe">
-                    "Accessible Design Co. transformed how we think about our product. Our accessibility score went from
-                    62 to 97 in six weeks — and our users noticed immediately."
-                    — Chloe Martinez, Head of Product at Luminary Health
-                </div>
+                <article class="item" id="chloe">
+                    <span>"Accessible Design Co. transformed how we think about our product. Our accessibility score went from
+                    62 to 97 in six weeks — and our users noticed immediately."</span>
+                    <p>— Chloe Martinez, Head of Product at Luminary Health</p>
+                </article>
 
-                <div class="item" id="taniesha">
-                    "Accessible Design Co. transformed how we think about our product. Our accessibility score went from
-                    62 to 97 in six weeks — and our users noticed immediately."
-                    — Taniesha Curry, Head of Product at Luminary Health
-                </div>
+                <article class="item" id="taniesha">
+                    <span>"Accessible Design Co. transformed how we think about our product. Our accessibility score went from
+                    62 to 97 in six weeks — and our users noticed immediately."</span>
+                    <p>— Taniesha Curry, Head of Product at Luminary Health</p>
+                </article>
             </div>
         </section>
     </main>
